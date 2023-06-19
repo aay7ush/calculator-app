@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Calculator App</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="text-[32px] bg-main-bg grid place-content-center min-h-[100vh]">
+    <main>
+      <article class="flex justify-between my-5 text-primary">
+        <h1 class="pt-5">calc</h1>
+        <div class="flex items-center gap-7">
+          <p class="pt-6 text-sm uppercase">theme</p>
+          <div class="grid">
+            <p class="flex justify-around text-sm">
+              <span>1</span><span>2</span><span>3</span>
+            </p>
+            <button id="theme-switcher" class="after:left-1"></button>
+          </div>
+        </div>
+      </article>
+      <article class="grid gap-5">
+        <input
+          id="input-el"
+          type="text"
+          class="px-5 py-4 text-4xl text-right rounded-lg text-primary bg-screen-bg"
+        />
+        <div class="grid grid-cols-4 gap-5 p-5 rounded-lg bg-toggle-bg">
+          <button class="key">7</button>
+          <button class="key">8</button>
+          <button class="key">9</button>
+          <button
+            id="delete-btn"
+            class="border-b-4 bg-key-bg-1 border-key-shadow-1 hover:bg-key-hover-1"
+          >
+            del
+          </button>
+          <button class="key">4</button>
+          <button class="key">5</button>
+          <button class="key">6</button>
+          <button class="key">+</button>
+          <button class="key">1</button>
+          <button class="key">2</button>
+          <button class="key">3</button>
+          <button class="key">-</button>
+          <button class="key">.</button>
+          <button class="key">0</button>
+          <button class="key">/</button>
+          <button class="key">x</button>
+          <button
+            id="reset-btn"
+            class="col-span-2 border-b-4 bg-key-bg-1 border-key-shadow-1 hover:bg-key-hover-1"
+          >
+            reset
+          </button>
+          <button
+            id="equal-btn"
+            class="col-span-2 border-b-4 bg-key-bg-2 border-key-shadow-2 hover:bg-key-hover-2"
+          >
+            =
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

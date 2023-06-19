@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .theme-default {
+    --primary: hsl(0, 0%, 100%);
+
+    --main-bg: hsl(222, 26%, 31%);
+    --toggle-bg: hsl(223, 31%, 20%);
+    --screen-bg: hsl(224, 36%, 15%);
+
+    --key-bg-1: hsl(225, 21%, 49%);
+    --key-shadow-1: hsl(224, 28%, 35%);
+    --key-hover-1: hsl(224, 51%, 76%);
+
+    --key-bg-2: hsl(6, 63%, 50%);
+    --key-shadow-2: hsl(6, 70%, 34%);
+    --key-hover-2: hsl(6, 93%, 67%);
+
+    --key-bg-3: hsl(30, 25%, 89%);
+    --key-shadow-3: hsl(28, 16%, 65%);
+    --key-hover-3: hsl(0, 0%, 100%);
+
+    --key: hsl(221, 14%, 31%);
+  }
+
+  .theme-light {
+    --primary: hsl(60, 10%, 19%);
+
+    --main-bg: hsl(0, 0%, 90%);
+    --toggle-bg: hsl(0, 5%, 81%);
+    --screen-bg: hsl(0, 0%, 93%);
+
+    --key-bg-1: hsl(185, 42%, 37%);
+    --key-shadow-1: hsl(185, 58%, 25%);
+    --key-hover-1: hsl(185, 41%, 56%);
+
+    --key-bg-2: hsl(25, 98%, 40%);
+    --key-shadow-2: hsl(25, 99%, 27%);
+    --key-hover-2: hsl(25, 100%, 61%);
+
+    --key-bg-3: hsl(45, 7%, 89%);
+    --key-shadow-3: hsl(35, 11%, 61%);
+    --key-hover-3: hsl(0, 0%, 100%);
+
+    --key: var(--primary);
+  }
+
+  .theme-purple {
+    --primary: hsl(52, 100%, 62%);
+
+    --main-bg: hsl(268, 75%, 9%);
+    --toggle-bg: hsl(268, 71%, 12%);
+    --screen-bg: hsl(268, 71%, 12%);
+
+    --key-bg-1: hsl(281, 89%, 26%);
+    --key-shadow-1: hsl(285, 91%, 52%);
+    --key-hover-1: hsl(280, 56%, 44%);
+
+    --key-bg-2: hsl(176, 100%, 44%);
+    --key-shadow-2: hsl(177, 92%, 70%);
+    --key-hover-2: hsl(177, 100%, 79%);
+
+    --key-bg-3: hsl(268, 47%, 21%);
+    --key-shadow-3: hsl(290, 70%, 36%);
+    --key-hover-3: hsl(268, 54%, 44%);
+
+    --key: var(--primary);
+  }
+
+  .key {
+    @apply pt-1 transition duration-300 border-b-4 rounded-md text-key bg-key-bg-3 border-key-shadow-3 hover:bg-key-hover-3;
+  }
+
+  #theme-switcher {
+    @apply relative w-16 h-6 rounded-xl bg-toggle-bg after:content-[''] after:h-4 after:w-4 after:bg-key-bg-2 after:rounded-full after:absolute after:top-1 after:transition after:duration-300 after:hover:bg-key-hover-2 cursor-pointer;
+  }
+
+  #delete-btn,
+  #reset-btn,
+  #equal-btn {
+    @apply pt-1 text-white uppercase transition duration-300 rounded-md;
+  }
+}
