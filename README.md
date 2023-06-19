@@ -15,7 +15,7 @@ _Purple Theme_
 
 ## Live Site
 
-Check out the live site [here](https://example.com/calculator).
+Check out the live site [here](https://calculat0r-4pp.netlify.app/).
 
 ## Features
 
