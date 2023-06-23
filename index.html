@@ -2,6 +2,7 @@
 <html lang="en" class="theme-default">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       type="image/png"
@@ -13,8 +14,8 @@
     <script src="script.js" defer></script>
   </head>
   <body class="text-[32px] bg-main-bg grid place-content-center min-h-[100vh]">
-    <main>
-      <article class="flex justify-between my-5 text-primary">
+    <main class="max-w-[90vw] mx-auto">
+      <article class="flex justify-between text-primary">
         <h1 class="pt-5">calc</h1>
         <div class="flex items-center gap-7">
           <p class="pt-6 text-sm uppercase">theme</p>
@@ -26,13 +27,13 @@
           </div>
         </div>
       </article>
-      <article class="grid gap-5">
+      <article>
         <input
           id="input-el"
           type="text"
-          class="px-5 py-4 text-4xl text-right rounded-lg text-primary bg-screen-bg"
+          class="w-full px-5 py-4 mb-5 text-4xl text-right rounded-lg text-primary bg-screen-bg"
         />
-        <div class="grid grid-cols-4 gap-5 p-5 rounded-lg bg-toggle-bg">
+        <div class="grid grid-cols-4 gap-4 p-4 rounded-lg bg-toggle-bg">
           <button class="key">7</button>
           <button class="key">8</button>
           <button class="key">9</button>
